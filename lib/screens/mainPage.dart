@@ -9,10 +9,28 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.primary,
       body: Container(
-          height: 100,
-          width: 100,
+          height: 1000,
+          width: 1000,
           color: AppColor.logobg,
-          child: Image.asset('assets/Android_logo.png')),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                    child: Image.asset(
+                  'assets/Android_logo.png',
+                  height: 100,
+                  width: 100,
+                )),
+                Container(
+                  child: Text(
+                    'Hi This is Harish',
+                    style: TextStyle(color: AppColor.fontclr, fontSize: 20),
+                  ),
+                ),
+              ],
+            ),
+          )),
     );
   }
 }

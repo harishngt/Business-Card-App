@@ -1,3 +1,4 @@
+import 'package:business_card_app/theme/color.dart';
 import 'package:flutter/material.dart';
 import 'package:business_card_app/screens/mainPage.dart';
 
@@ -12,6 +13,7 @@ class BusinessCardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: new ThemeData(scaffoldBackgroundColor: AppColor.primary),
       home: HomePage(),
     );
   }
